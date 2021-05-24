@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+#spinner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+#spinner .wrapper {
+	widows: 50%;
+	margin: 0 auto;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#spinner .wrapper:hover{
+	animation: rotate 160ms ease-in-out infinite 300ms;
+	animation-timing-function: ;
+	animation-iteration-count: ;
+	animation-duration: ;
+}
+#spinner .wrapper div {
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(red,blue);
+}
+#spinner .wrapper div.left {
+	width: 160px;
+	border-radius: 80px;
+}
+#spinner .wrapper div.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'GT-Eesti';
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	border-radius: 50%;
+}
+#spinner .wrapper div.right {
+	width: 160px;
+	border-radius: 80px;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(45deg);
+	}
+}
