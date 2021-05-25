@@ -15,8 +15,6 @@
 	width: 100%;
 }
 #spinner .wrapper {
-	widows: 50%;
-	margin: 0 auto;
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
